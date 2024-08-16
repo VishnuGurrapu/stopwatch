@@ -1,0 +1,137 @@
+.appContainer {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+  background-size: contain;
+
+  background-repeat: no-repeat;
+  height: 100vh; /* Ensures the container covers the full viewport height */
+  width: 100%; /* Ensures the container covers the full viewport width */
+}
+
+/* For smaller screens */
+@media (max-width: 767px) {
+  .appContainer {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png');
+    background-size: contain;
+
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.contentContainer {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .contentContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.heading {
+  color: #333333;
+  font-size: 30px;
+  font-weight: 500;
+  padding-left: 17vw;
+  padding-top: 5vh;
+}
+@media (max-width: 767px) {
+  .heading {
+    color: #333333;
+    font-size: 22px;
+    text-align: center;
+     padding-left: 0vw;
+  padding-top: 0vh;
+  }
+}
+.timerContainer {
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+   margin-left: 15vw;
+  
+}
+@media (max-width: 767px) {
+  .timerContainer {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 0px;
+  }
+}
+.timeiconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon {
+  height: 20px;
+}
+@media (max-width: 767px) {
+  .icon {
+    height: 15px;
+  }
+}
+.timerinWords {
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .timerinWords {
+    font-size: 12px;
+  }
+}
+.timer {
+  font-size: 33px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .timer {
+    font-size: 23px;
+  }
+}
+.startButton {
+  background-color: #1db05f;
+}
+.stopButton {
+  background-color: #ef0d36;
+}
+.resetButton {
+  background-color: #eaa800;
+}
+.btn {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .btn {
+    color: #ffffff;
+    font-size: 10px;
+    padding: 8px 10px 8px 10px;
+    border: none;
+    outline: none;
+  }
+}
+.btnContainer {
+  display: flex;
+  gap: 10px;
+}
